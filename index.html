@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIXFREE</title>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- estilo do projeto -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>FLIX FREE</h1>
+        <nav class="menu-desktop">
+            <a href="#"> Home</a>
+            <a href="#"> Lançamentos</a>
+            <a href="#"> Mais recentes</a>
+        </nav>
+        <nav class="menu-moblie">
+            <img class="icone-moblie" id="icone" src="img/menu-moblie.png" alt=""> <br>
+            <ul class="moblie-menu" id="moblie-menu">
+                <li><a href="#"> Home</a> </li>
+                <li> <a href="#"> Lançamentos</a> </li>
+                <li> <a href="#"> Mais recentes</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- destaques -->
+    <section class="destaques">
+        <!-- div que faz o efeito de overlay -->
+        <div class="overlay"></div>
+        <!-- texto destaque -->
+        <div class="texto-destaque">
+            <h2>ONE PIECE</h2>
+            <p>
+                Luffy e seus companheiros partem em direção à Grand Line,<br> a mais perigosa das rotas do mundo, em
+                incríveis aventuras,<br> revelando mistérios e enfrentando poderosos oponentes <br> em busca do One
+                Piece.
+            </p>
+            <br>
+            <a href=""> <img src="img/play.png" alt=""> Assistir</a>
+            <a href=""> <img src="img/mais.png" alt=""> Minha lista</a>
+            <a href=""> <img src="img/info.png" alt=""> Mais informações</a>
+        </div>
+    </section>
+
+    <!-- carrocel destaque -->
+    <div class="container-vitrine">
+        <h2>Destaques</h2>
+        <div class="vitrine">
+            <div> <abbr title="Fairy tail"><img src="img/14.jpg" alt=""></abbr></div>
+            <div> <abbr title="Attack on Titan"> <img src="img/04.jpg" alt=""> </abbr></div>
+            <div> <abbr title="One Piece"> <img src="img/05.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Love of kill "> <img src="img/06.jpg" alt=""> </abbr></div>
+            <div> <abbr title="That Time I Got Reincarnated as a Slime"> <img src="img/07.jpg" alt=""> </abbr></div>
+            <div> <abbr title="My hero academia"> <img src="img/08.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Sabikui bisco"> <img src="img/09.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Naruto"> <img src="img/10.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Welcome to Demon School! Iruma-kun"> <img src="img/11.jpg" alt=""> </abbr></div>
+
+        </div>
+    </div>
+    <!-- carrocel os mais vistos -->
+    <div class="container-vitrine">
+        <h2>Destaques</h2>
+        <div class="vitrine">
+            <div> <abbr title="Fairy tail"><img src="img/14.jpg" alt=""></abbr></div>
+            <div> <abbr title="Attack on Titan"> <img src="img/04.jpg" alt=""> </abbr></div>
+            <div> <abbr title="One Piece"> <img src="img/05.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Love of kill "> <img src="img/06.jpg" alt=""> </abbr></div>
+            <div> <abbr title="That Time I Got Reincarnated as a Slime"> <img src="img/07.jpg" alt=""> </abbr></div>
+            <div> <abbr title="My hero academia"> <img src="img/08.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Sabikui bisco"> <img src="img/09.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Naruto"> <img src="img/10.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Welcome to Demon School! Iruma-kun"> <img src="img/11.jpg" alt=""> </abbr></div>
+
+        </div>
+    </div>
+    <!-- carrocel os  -->
+    <div class="container-vitrine">
+        <h2>Destaques</h2>
+        <div class="vitrine">
+            <div> <abbr title="Fairy tail"><img src="img/14.jpg" alt=""></abbr></div>
+            <div> <abbr title="Attack on Titan"> <img src="img/04.jpg" alt=""> </abbr></div>
+            <div> <abbr title="One Piece"> <img src="img/05.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Love of kill "> <img src="img/06.jpg" alt=""> </abbr></div>
+            <div> <abbr title="That Time I Got Reincarnated as a Slime"> <img src="img/07.jpg" alt=""> </abbr></div>
+            <div> <abbr title="My hero academia"> <img src="img/08.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Sabikui bisco"> <img src="img/09.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Naruto"> <img src="img/10.jpg" alt=""> </abbr></div>
+            <div> <abbr title="Welcome to Demon School! Iruma-kun"> <img src="img/11.jpg" alt=""> </abbr></div>
+
+        </div>
+    </div>
+    <!-- script do menu moblie -->
+    <script>
+       var  mobliemenu = document.getElementById('moblie-menu');
+       var icone = document.getElementById('icone');
+       icone.addEventListener('click', function(){
+            if (mobliemenu.style.display != 'none') {
+                mobliemenu.style.display = 'none';
+            }else{
+                mobliemenu.style.display = 'block';
+            }
+
+       });
+    </script>
+    <!-- BIBLIOTECAS NECESSARIAS PARA O FUNCIONAMENTO DO SLIDER -->
+    </script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <!-- script do slider -->
+    <script>
+        $('.vitrine').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 4,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+        });
+    </script>
+
+</body>
+
+</html>
